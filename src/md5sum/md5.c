@@ -216,7 +216,7 @@ benchmark_body (int rpt, int len)
     md5(msg, len);
     free_beebs(msg);
 
-    uint8_t *p;
+    /*uint8_t *p;
     // display result
     p=(uint8_t *)&h0;
     printf("%2.2x%2.2x%2.2x%2.2x", p[0], p[1], p[2], p[3]);
@@ -228,7 +228,7 @@ benchmark_body (int rpt, int len)
     printf("%2.2x%2.2x%2.2x%2.2x", p[0], p[1], p[2], p[3]);
 
     p=(uint8_t *)&h3;
-    printf("%2.2x%2.2x%2.2x%2.2x\n", p[0], p[1], p[2], p[3]);
+    printf("%2.2x%2.2x%2.2x%2.2x\n", p[0], p[1], p[2], p[3]);*/
   }
 
   return h0 ^ h1 ^ h2 ^ h3;
